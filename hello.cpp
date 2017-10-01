@@ -4,8 +4,8 @@ designed by: Aaron Marples
 grayeagle161@gmail.com
 **********************************************/
 
-#!include <iostream>
-
+#include <iostream>
+#include <string>
 int main()
 {
 using std::cin;
@@ -15,7 +15,7 @@ using std::endl;
 string name;
 
 cout << "Please enter your name: ";
-cin >> name;
+getline(cin,name);
 cout << "\nHello, " << name << endl;
 exit 0;
 }
